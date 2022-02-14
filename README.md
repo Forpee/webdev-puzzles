@@ -31,7 +31,7 @@ user.f = sayHi;
 admin.f = sayHi;
 user.f();
 admin.f();
-admin['f]();
+admin['f']();
 
 ```
 
