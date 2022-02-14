@@ -45,9 +45,9 @@ admin['f]();
 
 #### Answer: C
 
-The var variable does not throw an error with this.
+The `var` variable does not throw an error with this even though it has global context.
 
-And you can use bracket notation to access properties on an object. The bracket notation takes in a string value.
+And you can use square bracket notation to access properties on an object. The square bracket notation works with any string.
 
 
 </p>
