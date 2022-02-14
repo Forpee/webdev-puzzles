@@ -47,3 +47,23 @@ Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, do
 </details>
 
 ---
+
+
+###### 2. What's the output?
+
+```javascript
+
+let user = { name: 'John' };
+var admin = { name: 'Admin' };
+
+function sayHi() {
+    console.log(this.name);
+}
+
+user.f = sayHi;
+admin.f = sayHi;
+user.f();
+admin.f();
+admin['f]();
+
+```
