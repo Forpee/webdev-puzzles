@@ -45,7 +45,7 @@ admin['f]();
 
 #### Answer: C
 
-The `var` variable does not throw an error with this even though it has global context.
+The `var` statement does not throw an error with `this` even though it is a globally scoped variable.
 
 And you can use square bracket notation to access properties on an object. The square bracket notation works with any string.
 
