@@ -54,3 +54,17 @@ And you can use square bracket notation to access properties on an object. The s
 </details>
 
 ---
+
+###### 2. Whats the output?
+
+```javascript
+
+const arr = [1,2,3]; 
+
+arr[7] = 20;
+
+console.log(arr);
+
+```
+
+
