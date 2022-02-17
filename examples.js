@@ -43,3 +43,23 @@ function numberArrOnly() {
 
 // Use ownKeys trap to make for..in loop over property names that start with _ in user object
 // Private property names like in c++. This is really meta programming
+
+function secureVar() {
+    let user = {
+        name: 'John',
+        surname: 'Johnson',
+        _age: 25,
+        _password: '********************************', 
+    };
+
+    user = new Proxy(user, {
+        ownKeys(target) {
+           return Object.keys(target).filter(key => !key.startsWith('_'));
+           
+        }
+    })
+
+    for (let key in user) {
+        console.log(user[key])
+    }
+}
