@@ -18,3 +18,21 @@ function returnZeroForNonExistentValues() {
     console.log(numbers[290832]);
 }
 
+// Proxies with set
+
+function numberArrOnly() {
+
+    let numbers = [];
+
+    numbers = new Proxy(numbers, {
+        set(target, prop, value) {
+            if (typeof value === "number") {
+                target[prop] = val;
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+    })
+}
