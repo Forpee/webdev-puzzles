@@ -1,3 +1,7 @@
+/*
+* META PROGRAMMING
+*/
+
 // Create an array that returns 0 for nonexixtent values
 
 function returnZeroForNonExistentValues() {
@@ -19,7 +23,7 @@ function returnZeroForNonExistentValues() {
 }
 
 // Proxies with set
-
+// Could typescript be built like this?
 function numberArrOnly() {
 
     let numbers = [];
@@ -36,3 +40,6 @@ function numberArrOnly() {
         }
     })
 }
+
+// Use ownKeys trap to make for..in loop over property names that start with _ in user object
+// Private property names like in c++. This is really meta programming
