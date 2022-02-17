@@ -87,4 +87,99 @@ depending on where you run it (it's different for every browser, node, etc.)
 </p>
 </details>
 
+---
 
+###### 2. Whats the output?
+
+```javascript
+
+const animal = { name: 'cat' };
+
+const zoo = [animal];
+
+animal = null;
+
+console.log(zoo)
+
+```
+
+- A: `[{}]`
+- B: `null`
+- C: `[null]`
+- D: `[{ name: "cat" }]`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+When you set a value to an element in an array that exceeds the length of the array, JavaScript creates something called "empty slots". These actually have the value of `undefined`, but you will see something like:
+
+`[1, 2, 3, 4 x empty, 20]`
+
+depending on where you run it (it's different for every browser, node, etc.)
+
+
+</p>
+</details>
+
+---
+
+###### 3. Whats the output?
+
+```javascript
+
+const proxy = new Proxy(target, handler);
+
+```
+
+- A: `[{}]`
+- B: `null`
+- C: `[null]`
+- D: `[{ name: "cat" }]`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+When you set a value to an element in an array that exceeds the length of the array, JavaScript creates something called "empty slots". These actually have the value of `undefined`, but you will see something like:
+
+`[1, 2, 3, 4 x empty, 20]`
+
+depending on where you run it (it's different for every browser, node, etc.)
+
+
+</p>
+</details>
+
+---
+
+###### 4. Whats the output?
+
+```javascript
+
+const arr = [1, 2, 3];
+const [y] = arr;
+
+console.log(y)
+
+```
+
+- A: `[1, 2, 3]`
+- B: `[[1, 2, 3]]`	
+- C: `[1]`
+- D: `1`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+Array Destructuring
+
+
+</p>
+</details>
+
+---
