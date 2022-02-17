@@ -99,7 +99,7 @@ const zoo = [animal];
 
 animal = null;
 
-console.log(zoo)
+console.log(zoo);
 
 ```
 
@@ -162,7 +162,7 @@ depending on where you run it (it's different for every browser, node, etc.)
 const arr = [1, 2, 3];
 const [y] = arr;
 
-console.log(y)
+console.log(y);
 
 ```
 
@@ -177,6 +177,34 @@ console.log(y)
 #### Answer: D
 
 Array Destructuring
+
+
+</p>
+</details>
+
+---
+
+###### 5. Whats the output?
+
+```javascript
+
+!function() {
+  console.log(...arguments);
+}(1,2,3);
+
+```
+
+- A: `1, 2, 3`
+- B: `[1, 2, 3]`	
+- C: `ReferenceError`
+- D: `SyntaxError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+IIFE. You can use the NOT bitwise operator to start the expression.
 
 
 </p>
