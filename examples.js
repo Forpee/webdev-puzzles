@@ -49,13 +49,21 @@ function secureVar() {
         name: 'John',
         surname: 'Johnson',
         _age: 25,
-        _password: '********************************', 
+        _password: '********************************',
     };
 
     user = new Proxy(user, {
         ownKeys(target) {
-           return Object.keys(target).filter(key => !key.startsWith('_'));
-           
+            return Object.keys(target).filter(key => !key.startsWith('_'));
+
+        },
+        
+        //If we ever were to return a property name not in the OwnKeys trap, we add this to set enumerabel to true so it will return the value
+        getOwnPropertyDescriptor(target, name) {
+            return {
+                enumerable: true,
+                configurable: true
+            }
         }
     })
 
