@@ -71,3 +71,5 @@ function secureVar() {
         console.log(user[key])
     }
 }
+
+// Create protected properties

@@ -211,3 +211,35 @@ IIFE. You can use the NOT bitwise operator to start the expression.
 </details>
 
 ---
+<!-- One of my favourite web-dv puzzles -->
+###### 5. Whats the output?
+
+```javascript
+
+const num = 10;
+
+const incNum = () => num++;
+const incNumWithParam = (number) => number++;
+
+num1 = incNum();
+num2 = incNumWithParam(num1);
+
+```
+
+- A: `1, 2, 3`
+- B: `[1, 2, 3]`	
+- C: `ReferenceError`
+- D: `SyntaxError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+IIFE. You can use the NOT bitwise operator to start the expression.
+
+
+</p>
+</details>
+
+---
