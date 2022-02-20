@@ -57,7 +57,7 @@ function secureVar() {
             return Object.keys(target).filter(key => !key.startsWith('_'));
 
         },
-        
+
         //If we ever were to return a property name not in the OwnKeys trap, we add this to set enumerabel to true so it will return the value
         getOwnPropertyDescriptor(target, name) {
             return {
@@ -73,3 +73,17 @@ function secureVar() {
 }
 
 // Create protected properties
+
+const person = {
+    name: 'John',
+    surname: 'Johnson',
+    _password: '********************************'
+}
+
+person = new Proxy(person, {
+    get(target, prop) { },
+    set(target, prop, value) { },
+    ownKeys() { },
+    deleteProperty() { },
+
+})
