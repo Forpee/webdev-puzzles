@@ -81,7 +81,11 @@ const person = {
 }
 
 person = new Proxy(person, {
-    get(target, prop) { },
+    get(target, prop) {
+        if (prop.startsWith('_')){
+            throw new Error('Access denied');
+        }
+     },
     set(target, prop, value) { },
     ownKeys() { },
     deleteProperty() { },
