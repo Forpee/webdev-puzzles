@@ -82,13 +82,19 @@ const person = {
 
 person = new Proxy(person, {
     get(target, prop) {
-        if (prop.startsWith('_')){
+        if (prop.startsWith('_')) {
             throw new Error('Access denied');
         }
 
         let value = target[prop];
         return (typeof value === 'function') ? value.bind(target) : value;
-     },
+        /*
+        * If the value is a function, we bind it to the target object.
+        * This is so that the function will have access to the target object.
+        * This is a good example of the power of Proxy
+        */
+
+    },
     set(target, prop, value) { },
     ownKeys() { },
     deleteProperty() { },
