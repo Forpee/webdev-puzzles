@@ -87,7 +87,7 @@ person = new Proxy(person, {
         }
 
         let value = target[prop];
-        return value;
+        return (typeof value === 'function') ? value.bind(target) : value;
      },
     set(target, prop, value) { },
     ownKeys() { },
