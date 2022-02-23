@@ -85,6 +85,8 @@ person = new Proxy(person, {
         if (prop.startsWith('_')){
             throw new Error('Access denied');
         }
+
+        let value = target[prop];
      },
     set(target, prop, value) { },
     ownKeys() { },
