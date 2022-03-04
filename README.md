@@ -243,3 +243,31 @@ IIFE. You can use the NOT bitwise operator to start the expression.
 </details>
 
 ---
+
+###### 7. Whats the output?
+
+```javascript
+
+setTimeout(() => console.log(1), 1000);
+Promise.resolve('hi').then(console.log(2));
+console.log(3)
+
+```
+
+- A: `10` `11`
+- B: `10`	`10`
+- C: `11` `11`
+- D: `11` `12
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+IIFE. You can use the NOT bitwise operator to start the expression.
+
+
+</p>
+</details>
+
+---
