@@ -254,10 +254,10 @@ console.log(3)
 
 ```
 
-- A: `10` `11`
-- B: `10`	`10`
-- C: `11` `11`
-- D: `11` `12
+- A: `3` `2` `1`
+- B: `3`	`1` `2`
+- C: `2` `3` `1`	
+- D: `ReferenceError`
 
 <details><summary><b>Answer</b></summary>
 <p>
