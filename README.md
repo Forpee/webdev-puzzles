@@ -271,3 +271,38 @@ IIFE. You can use the NOT bitwise operator to start the expression.
 </details>
 
 ---
+
+###### 8. Whats the output?
+
+```javascript
+
+var favouriteFood = 'grapes';
+
+var foodThoughts = function() {
+  console.log(`I like ${favouriteFood}`);
+
+  var favouriteFood = 'bananas';
+
+  console.log(`I like ${favouriteFood}`);
+}
+}
+
+```
+
+- A: `3` `2` `1`
+- B: `I like undefined`	`I like bananas`
+- C: `2` `3` `1`	
+- D: `ReferenceError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+IIFE. You can use the NOT bitwise operator to start the expression.
+
+
+</p>
+</details>
+
+---
