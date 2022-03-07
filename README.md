@@ -329,7 +329,7 @@ bar()
 
 #### Answer: B
 
-IIFE. You can use the NOT bitwise operator to start the expression.
+bar is actually enclosed into its own scope
 
 
 </p>
