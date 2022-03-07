@@ -306,3 +306,33 @@ IIFE. You can use the NOT bitwise operator to start the expression.
 </details>
 
 ---
+
+###### 8. Whats the output?
+
+```javascript
+
+let foo = function bar() {
+  return 'foo';
+}
+foo()
+bar()
+
+```
+
+- A: `3` `2` `1`
+- B: `I like undefined`	`I like bananas`
+- C: `2` `3` `1`	
+- D: `ReferenceError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+IIFE. You can use the NOT bitwise operator to start the expression.
+
+
+</p>
+</details>
+
+---
