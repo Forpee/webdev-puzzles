@@ -329,7 +329,7 @@ bar()
 
 #### Answer: B
 
-bar is actually enclosed into its own scope
+bar is actually enclosed into its own scope. `bar` gets added to its won execution context variable environment
 
 
 </p>
