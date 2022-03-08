@@ -345,7 +345,7 @@ var a = {
 }
 
 var b = { 
-  foo() {return function() console.log(this)}
+  foo() {return function() {console.log(this)}}
 }
 
 var c = { 
@@ -357,12 +357,12 @@ var c = {
 - A: `3` `2` `1`
 - B: `I like undefined`	`I like bananas`
 - C: `window()` `window()` `c`	
-- D: `ReferenceError`
+- D: `a` `window obj` `c`
 
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C
+#### Answer: D
 
 bar is actually enclosed into its own scope. `bar` gets added to its won execution context variable environment
 
