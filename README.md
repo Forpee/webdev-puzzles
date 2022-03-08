@@ -306,7 +306,7 @@ IIFE. You can use the NOT bitwise operator to start the expression.
 
 ---
 
-###### 8. Whats the output?
+###### 9. Whats the output?
 
 ```javascript
 
@@ -327,6 +327,42 @@ bar()
 <p>
 
 #### Answer: B
+
+bar is actually enclosed into its own scope. `bar` gets added to its won execution context variable environment
+
+
+</p>
+</details>
+
+---
+
+###### 10. Whats the output?
+
+```javascript
+
+var a = { 
+  baz() {console.log(this)}
+}
+
+var b = { 
+  foo() {return function() console.log(this)}
+}
+
+var c = { 
+  bar() {return ()  => console.log(this)}
+}
+
+```
+
+- A: `3` `2` `1`
+- B: `I like undefined`	`I like bananas`
+- C: `window()` `window()` `c`	
+- D: `ReferenceError`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: C
 
 bar is actually enclosed into its own scope. `bar` gets added to its won execution context variable environment
 
