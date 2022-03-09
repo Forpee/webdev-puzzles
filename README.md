@@ -88,7 +88,7 @@ depending on where you run it (it's different for every browser, node, etc.)
 
 ---
 
-###### 2. Whats the output?
+###### 3. Whats the output?
 
 ```javascript
 
@@ -112,11 +112,8 @@ console.log(zoo);
 
 #### Answer: D
 
-When you set a value to an element in an array that exceeds the length of the array, JavaScript creates something called "empty slots". These actually have the value of `undefined`, but you will see something like:
+When you wrap around 
 
-`[1, 2, 3, 4 x empty, 20]`
-
-depending on where you run it (it's different for every browser, node, etc.)
 
 
 </p>
