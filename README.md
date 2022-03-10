@@ -121,7 +121,7 @@ When you wrap around
 
 ---
 
-###### 3. Whats the output?
+###### 4. Whats the output?
 
 ```javascript
 
@@ -151,7 +151,7 @@ depending on where you run it (it's different for every browser, node, etc.)
 
 ---
 
-###### 4. Whats the output?
+###### 5. Whats the output?
 
 ```javascript
 
@@ -180,7 +180,7 @@ Array Destructuring
 
 ---
 
-###### 5. Whats the output?
+###### 6. Whats the output?
 
 ```javascript
 
@@ -208,7 +208,7 @@ IIFE. You can use the NOT bitwise operator to start the expression.
 
 ---
 <!-- One of my favourite web-dv puzzles -->
-###### 6. Whats the output?
+###### 7. Whats the output?
 
 ```javascript
 
@@ -240,7 +240,7 @@ IIFE. You can use the NOT bitwise operator to start the expression.
 
 ---
 
-###### 7. Whats the output?
+###### 8. Whats the output?
 
 ```javascript
 
@@ -268,7 +268,7 @@ IIFE. You can use the NOT bitwise operator to start the expression.
 
 ---
 
-###### 8. Whats the output?
+###### 9. Whats the output?
 
 ```javascript
 
@@ -303,7 +303,7 @@ IIFE. You can use the NOT bitwise operator to start the expression.
 
 ---
 
-###### 9. Whats the output?
+###### 10. Whats the output?
 
 ```javascript
 
@@ -333,7 +333,7 @@ bar is actually enclosed into its own scope. `bar` gets added to its won executi
 
 ---
 
-###### 10. Whats the output?
+###### 11. Whats the output?
 
 ```javascript
 
