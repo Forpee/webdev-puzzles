@@ -58,7 +58,7 @@ And you can use square bracket notation to access properties on an object. The s
 
 ```javascript
 
-const arr = [1,2,3]; 
+const arr = [1, 2, 3]; 
 
 arr[7] = 20;
 
@@ -112,7 +112,7 @@ console.log(zoo);
 
 #### Answer: D
 
-When you wrap around 
+When you assign an object inside square bracket notation to a variable the object is passed by value.
 
 
 
