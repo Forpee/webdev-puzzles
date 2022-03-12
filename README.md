@@ -112,7 +112,7 @@ console.log(zoo);
 
 #### Answer: D
 
-When you assign an object inside square bracket notation to a variable the object is passed by value.
+You assign the first ... in zoo to equal the object animal
 
 
 
