@@ -232,7 +232,7 @@ num2 = incNumWithParam(num1);
 
 #### Answer: B
 
-IIFE. You can use the NOT bitwise operator to start the expression.
+Return first then increment.
 
 
 </p>
