@@ -29,9 +29,10 @@ function sayHi() {
 
 user.f = sayHi;
 admin.f = sayHi;
+
 user.f();
-admin.f();
 admin['f']();
+sayHi();
 
 ```
 
@@ -45,7 +46,7 @@ admin['f']();
 
 #### Answer: C
 
-
+You adding a method to the objects. `this` is dynamically scoped 
 And you can use square bracket notation to access properties on an object. The square bracket notation works with any string.
 
 
