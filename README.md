@@ -23,7 +23,10 @@ From basic to advanced: test how well you know JavaScript, refresh your knowledg
 let user = { name: 'John' };
 var admin = { name: 'Admin' };
 
+var name = 'global';
+
 function sayHi() {
+    var name = 'Foo'
     console.log(this.name);
 }
 
@@ -31,22 +34,22 @@ user.f = sayHi;
 admin.f = sayHi;
 
 user.f();
-admin['f']();
 sayHi();
+admin['f']();
 
 ```
 
-- A: `John` `Admin` `undefined`
-- B: `John` `Admin` `SyntaxError`
-- C: `John` `Admin` `Admin`
-- D: `John` `undefined` `undefined`
+- A: `John` `Foo` `Admin`
+- B: `Global` `Foo` `SyntaxError`
+- C: `John` `undefined` `SyntaxError`
+- D: `Foo` `Foo` `Foo`
 
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: C
+#### Answer: A
 
-You adding a method to the objects. `this` is dynamically scoped 
+You adding a method to the objects. `this` is dynamically scoped.
 And you can use square bracket notation to access properties on an object. The square bracket notation works with any string.
 
 
@@ -349,6 +352,39 @@ var b = {
 var c = { 
   bar() {return ()  => console.log(this)}
 }
+
+```
+
+- A: `3` `2` `1`
+- B: `I like undefined`	`I like bananas`
+- C: `window()` `window()` `c`	
+- D: `a` `window obj` `c`
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: D
+
+bar is actually enclosed into its own scope. `bar` gets added to its won execution context variable environment
+
+
+</p>
+</details>
+
+---
+
+###### 11. Whats the output?
+
+```javascript
+
+function printName(firstName) {
+  return function (lastName) {
+    console.log(`${firstName} ${lastName}`)
+  }
+}
+
+const getName = printName()
+
 
 ```
 
