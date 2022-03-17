@@ -260,7 +260,7 @@ console.log(3)
 
 #### Answer: B
 
-IIFE. You can use the NOT bitwise operator to start the expression.
+There is another queue for promises that has higher priority than callback queue
 
 
 </p>
