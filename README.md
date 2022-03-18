@@ -361,7 +361,7 @@ var c = {
 
 #### Answer: D
 
-bar is actually enclosed into its own scope. `bar` gets added to its won execution context variable environment
+`this` is dynamically scoped
 
 
 </p>
